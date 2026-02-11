@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # 后端API服务
+  trading-api:
+    build: .
+    container_name: trading-system-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/trading_system/data
+      - ./logs:/app/trading_system/logs
+    environment:
+      - TDX_API_URL=http://43.138.33.77:8080
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    networks:
+      - trading-network
+
+  # 前端Web服务
+  trading-web:
+    image: nginx:alpine
+    container_name: trading-system-web
+    ports:
+      - "80:80"
+    volumes:
+      - ./trading-dashboard/dist:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - trading-api
+    restart: unless-stopped
+    networks:
+      - trading-network
+
+networks:
+  trading-network:
+    driver: bridge
+
+volumes:
+  data:
+  logs:
