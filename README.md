@@ -13,6 +13,11 @@
 
 本系统严格遵循史丹·温斯坦的阶段分析法，通过**30周均线**判断股票所处的四个阶段，并结合成交量、大盘趋势等多重因素，生成买入/卖出交易信号。
 
+<img width="1910" height="915" alt="image" src="https://github.com/user-attachments/assets/ef5c06e7-f79a-48b4-bda1-ce3b4a7623b3" />
+
+<img width="1910" height="915" alt="image" src="https://github.com/user-attachments/assets/c0cc8a14-ce08-4111-ad9e-0702177be943" />
+
+
 ### 核心设计理念
 
 > "不要试图抄底摸顶，只在第二阶段（上升趋势）买入，在第四阶段（下降趋势）远离。" —— 史丹·温斯坦
