@@ -7,6 +7,8 @@
 ![React](https://img.shields.io/badge/React-18+-61DAFB.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+**项目灵感视频**：https://www.bilibili.com/video/BV1twFSzNE75/
+
 ## 系统简介
 
 本系统严格遵循史丹·温斯坦的阶段分析法，通过**30周均线**判断股票所处的四个阶段，并结合成交量、大盘趋势等多重因素，生成买入/卖出交易信号。
