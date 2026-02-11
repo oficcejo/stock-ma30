@@ -1,6 +1,6 @@
 # 30周均线交易系统
 
-基于史丹·温斯坦《一条均线定乾坤》（How to Make Money in Stocks）的量化交易系统。
+基于史丹·温斯坦《笑傲牛熊：一条均线定乾坤》（How to Make Money in Stocks）的量化交易系统。
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
